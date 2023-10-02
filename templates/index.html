@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Helper</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+</head>
+<body>
+    <main class="main">
+        <h1 class="main__title">Review Helper </h1>
+            <form action="/" method="post">
+                <select name="customization" class="form__dropdown">
+                    <option value="Auto-Improve" {{ "selected" if selected_option == "Auto-Improve" else "" }}>Auto-Improve</option>
+                    <option value="Shorten" {{ "selected" if selected_option == "Shorten" else "" }}>Shorten</option>
+                    <option value="Expand" {{ "selected" if selected_option == "Expand" else "" }}>Expand</option>
+                    <option value="Professional Tone" {{ "selected" if selected_option == "Professional Tone" else "" }}>Professional Tone</option>
+                    <option value="Persuasive Tone" {{ "selected" if selected_option == "Persuasive Tone" else "" }}>Persuasive Tone</option>
+                    <option value="Fix Mistakes Only" {{ "selected" if selected_option == "Fix Mistakes Only" else "" }}>Fix Mistakes Only</option>
+                </select>
+                <br><br>
+                <textarea name="review" class="form__textarea" rows="20" cols="50" placeholder="Type your review here...">{{ result }}</textarea>
+                <br><br>
+                <input type="submit" value="Improve Review" class="form__submit">
+            </form>
+    </main>
+</body>
+</html>
