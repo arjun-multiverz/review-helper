@@ -1,6 +1,6 @@
 openai
 flask
-flask_smorest
+flask-smorest
 python-dotenv
 gunicorn
 tenacity
