@@ -1,10 +1,5 @@
 openai
 flask
-sqlalchemy
-flask-sqlalchemy
-flask-smorest
-marshmallow
-flask-migrate
 python-dotenv
 gunicorn
 tenacity
